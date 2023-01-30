@@ -7,6 +7,7 @@
 // Import the state hook
 import React from 'react';
 // Import the Posts (plural!) and SearchBar components, since they are used inside App component
+import SearchBar from './components/SearchBar/SearchBar'
 // Import the dummyData
 import './App.css';
 
@@ -18,6 +19,7 @@ const App = () => {
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
+      <SearchBar/>
       {/* Check the implementation of each component, to see what props they require, if any! */}
     </div>
   );
