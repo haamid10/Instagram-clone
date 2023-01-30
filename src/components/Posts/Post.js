@@ -3,13 +3,13 @@ import Comments from '../Comments/Comments';
 import LikeSection from './LikeSection';
 import PostHeader from './PostHeader';
 
-const Post = ({story}) => {
+const Post = props => {
   // 🔥 Make sure the parent of Post is passing the right props!
-  // const { post } = props;
+  const { post } = props;
   
   // This is the state for the likes, if you pass the state correctly, the heart button should increase the likes
   
-    const [likes, setLikes] = useState(story.likes);
+    const [likes, setLikes] = useState(props.likes);
     
  // Function to increase the number of likes
   
@@ -20,20 +20,20 @@ const Post = ({story}) => {
   return (
     <div className='post-border'>
       <PostHeader
-        username={story.username}
-        thumbnailUrl={story.thumbnailUrl}
+        username={props.username}
+        thumbnailUrl={props.thumbnailUrl}
       />
       <div className='post-image-wrapper'>
         <img
           alt='post thumbnail'
           className='post-image'
-          src={story.imageUrl}
+          src={props.imageUrl}
         />
       </div>
       {/* Is LikeSection getting all the props it needs to work correctly? */}
-      <LikeSection likes={likes} incrementLikes={incrementLikes} />
+      <LikeSection  incrementLikes={incrementLikes} />
       {/* Comments also wants its props! */}
-      <Comments Comments={story.Comments}/>
+      <Comments />
     </div>
   );
 };

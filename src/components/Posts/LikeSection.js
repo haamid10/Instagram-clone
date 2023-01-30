@@ -6,9 +6,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComment, faHeart } from '@fortawesome/free-regular-svg-icons';
 
-const LikeSection = ({likes ,incrementLikes}) => {
+const LikeSection = props => {
   // 🔥 Make sure the parent of LikeSection is passing the right props!
-  // const { incrementLikes, numberOfLikes } = likes;
+  const { incrementLikes, numberOfLikes } = props;
 
   return (
     <div>
@@ -20,7 +20,7 @@ const LikeSection = ({likes ,incrementLikes}) => {
           {/* Create an onClick function and pass the 'incrementLikes' property */}
 
         <div className='like-section-wrapper'>
-          <FontAwesomeIcon onClick={()=>incrementLikes} icon={faHeart} />
+          <FontAwesomeIcon onClick={()=>incrementLikes(numberOfLikes)} icon={faHeart} />
         </div>
         <div className='like-section-wrapper'>
           <FontAwesomeIcon icon={faComment} />
@@ -29,7 +29,7 @@ const LikeSection = ({likes ,incrementLikes}) => {
     
           {/* Change this hard coded likes to like from props */}
 
-      <p className='like-number'>{likes.length}</p>
+      <p className='like-number'>{props.numberOfLikes}likes</p>
     </div>
   );
 };
