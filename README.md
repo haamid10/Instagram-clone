@@ -1,46 +1,70 @@
-# React JS Instagram Clone
+# Getting Started with Create React App
 
-## Composing React Components and Passing Data Via Props
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Introduction
+## Available Scripts
 
-- For this project, you'll be building a simple Instagram clone using React.
-- There is a file provided called `dummy-data.js` that contains some mock data. Each object in the mock data represents a faux Instagram post.
-- Your React application will receive faux post data and render each as a separate Instagram post.
+In the project directory, you can run:
 
-## Instructions
+### `npm start`
 
-### Task 1: Project Setup
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-This project was put together using create-react-app (CRA). You will not need to install CRA in order to make this project work. Follow the steps below to setup the project with the proper dependencies.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- [ ]  Create a forked copy of this project.
-- [ ]  Add your group lead as collaborator on Github.
-- [ ]  Clone your OWN version of the repository in your terminal
-- [ ]  CD into the project base directory `cd React-JS-Instagram-Clone`
-- [ ]  Download project dependencies by running `npm install`
-- [ ]  Start up the app using `npm start`
-- [ ]  Create a new branch: git checkout -b `<firstName-lastName>`. Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ]  Push commits: git push origin `<firstName-lastName>`.
+### `npm test`
 
-### Task 2a: MVP
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- [ ]  This app can be broken down to two main sections that you'll need to implement for this project: the Search Bar and the Posts.
-- [ ]  To complete this project there will be a single instance of the Search Bar being rendered at the top of the page, as well as a Posts component that renders an individual Post for every object inside the `dummy-data.js` array.
-- [ ]  Use what you learned yesterday to set up state to keep track of the posts.
-- [ ]  You will implement a callback to increase the "likes count" on posts, and hand it through props several levels down into a nested component.
-- [ ]  Look through the code before you start. There are a lot of files. Not all of them need code added to them. Start in the App.js file and read the instructions there.
+### `npm run build`
 
----
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Your project should end up looking like [this](https://tm.gabischool.com/assets/themes/admin/images/TM/section_two/week_one/day_two/insta-clone.png)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Task 3: Stretch Goals
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- [ ]  Create more dummy data in the dummy-data.js file and add search functionality to the search bar. One way to do this is with a filter method.
-- [ ]  Implement the ability to add comments to a post using an input.
-- [ ]  Finish styling all of the application and get your instagram clone to closely resemble the given design spec.
+### `npm run eject`
 
-## Submission Format
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
