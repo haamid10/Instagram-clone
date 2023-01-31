@@ -8,9 +8,9 @@
 import React from 'react';
 import { useState } from 'react';
 // Import the Posts (plural!) and SearchBar components, since they are used inside App component
-// import Posts from './components/Posts/Post'
-// import SearchBar from './components/SearchBar/SearchBar'
-import Hello from './components/Hello'
+import Posts from './components/Posts/Post'
+import SearchBar from './components/SearchBar/SearchBar'
+import Hello from './components/Posts/Hello'
 
 // Import the dummyData
 import dummyData from './dummy-data';
@@ -24,21 +24,21 @@ const App = () => {
 
   const [posts ,setPosts] =  useState(dummyData)
 
-  const handlePosts =() =>{
-    setPosts(posts.map((post)=>{
-      return post
-    }) )
-  }
+  // const handlePosts =() =>{
+  //   setPosts(posts.map((post)=>{
+  //     return post
+  //   }) )
+  // }
 
   
 
   return (
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
-      {/* <SearchBar handle={handleSearch} search={search}/>
-      <Posts posts={posts}/> */}
+      <SearchBar />
+      <Posts/> 
    
-      <Hello  posts={posts} />
+      <Hello    posts={posts}/>
 
     
       {/* Check the implementation of each component, to see what props they require, if any! */}
