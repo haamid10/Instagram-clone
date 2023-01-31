@@ -36,7 +36,7 @@ const App = () => {
     <div className='App'>
       {/* Add SearchBar and Posts here to render them */}
       <SearchBar />
-      <Posts/> 
+      {/* <Posts/>  */}
    
       <Hello    posts={posts}/>
 
