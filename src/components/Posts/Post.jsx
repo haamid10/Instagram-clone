@@ -33,7 +33,7 @@ const Post = ({post})=> {
       {/* Is LikeSection getting all the post it needs to work correctly? */}
       <LikeSection likes={likes} incrementLikes={incrementLikes} />
       {/* Comments also wants its props! */}
-      <Comments />
+      <Comments comments={post.comments}/>
     </div>
   );
 };

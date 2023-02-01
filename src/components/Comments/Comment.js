@@ -1,9 +1,9 @@
 // You do not need to change this file.
 import React from 'react';
 
-const Comment = props => {
+const Comment = ({comment})=> {
   // 🔥 Make sure the parent of Comment is passing the right props!
-  const { comment } = props;
+  // const { comment } = props;
 
   return (
     <div className='comment-text'>
