@@ -6,9 +6,9 @@ const Hello = ({posts}) => {
   // console.log(posts)
   return (
     <div className='posts-container-wrapper'>
-      <h1>{posts.map((pst)=>(
+      {posts.map((pst)=>(
        <Post post={pst} />
-      ))}</h1>
+      ))}
     </div>
   )
 }

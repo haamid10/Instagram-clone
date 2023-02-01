@@ -5,7 +5,7 @@ import PostHeader from './PostHeader';
 
 const Post = ({post})=> {
   // 🔥 Make sure the parent of Post is passing the right props!
-  console.log(post )
+  // console.log(post )
   
   // This is the state for the likes, if you pass the state correctly, the heart button should increase the likes
   
